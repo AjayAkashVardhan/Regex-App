@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Tester</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Regex Tester</h2>
+        <form action="/results" method="post">
+            <label for="test_string">Test String:</label><br>
+            <textarea id="test_string" name="test_string" rows="4" cols="50" placeholder="Enter Your Text Here" required></textarea><br>
+            <label for="regex">Regular Expression:</label><br>
+            <input type="text" id="regex" name="regex" placeholder="Enter Your pattern here" required><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        {% if matches %}
+            <h3>Matches:</h3>
+            <ul>
+                {% for match in matches %}
+                    <li>{{ match }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+
+    <div class="container">
+        <h2>Email Tester</h2>
+        <form action="/validate_email" method="post">
+            <label for="email">Email Address:</label><br>
+            <input type="text" id="email" name="email" placeholder="Enter your mail here" required><br>
+            <input type="submit" value="Validate">
+        </form>
+
+        
+    </div>
+</body>
+</html>

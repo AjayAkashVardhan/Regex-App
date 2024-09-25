@@ -1,0 +1,112 @@
+/* static/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url('https://www.fg-a.com/wallpapers/2020-black-crystalline-peaks-image-th.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: inherit;
+    
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(254, 254, 254, 0.1); /* White background with opacity */
+    border-radius: 50px;
+    border-color: white;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+    align-self: flex-end;
+}
+
+.button-container {
+    text-align: center;
+    color: #0056b3;
+}
+
+button{
+    text-align: center;
+    color: #0056b3;
+    
+}
+
+title {
+    color: #000000;
+}
+
+label {
+    color: white; /* Desired color for label names */
+}
+
+h1 {
+    color: #178527;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3{
+    color: white;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], textarea {
+    width: calc(100% - 22px); /* Adjusted width for better alignment */
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #000000;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+input[type="submit"] {
+    background-color: #040704; /* Blue submit button */
+    color: rgb(246, 245, 245);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+ul li {
+    margin-bottom: 5px;
+    color: white;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
